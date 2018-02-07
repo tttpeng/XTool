@@ -11,6 +11,14 @@
 		043DF1352029C516007D70DF /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043DF1332029C516007D70DF /* CommonCrypto.framework */; };
 		043DF1362029C53A007D70DF /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043DF1332029C516007D70DF /* CommonCrypto.framework */; };
 		043DF1372029C53A007D70DF /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 043DF1332029C516007D70DF /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		043DF13F202AB47A007D70DF /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DF13E202AB47A007D70DF /* ConnectViewController.swift */; };
+		043DF143202AB658007D70DF /* PTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DF140202AB658007D70DF /* PTManager.swift */; };
+		043DF144202AB658007D70DF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DF142202AB658007D70DF /* Helper.swift */; };
+		0445B5AE202AB26100426C61 /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 0445B5A3202AB26100426C61 /* PTUSBHub.m */; };
+		0445B5AF202AB26100426C61 /* PTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 0445B5A4202AB26100426C61 /* PTProtocol.m */; };
+		0445B5B0202AB26100426C61 /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0445B5A7202AB26100426C61 /* PTChannel.m */; };
+		0445B5B1202AB26100426C61 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0445B5AB202AB26100426C61 /* LICENSE.txt */; };
+		0445B5B2202AB26100426C61 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0445B5AD202AB26100426C61 /* Info.plist */; };
 		04B1B3D120299ABE00EEF6DE /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F800AD2029938200573EA6 /* CocoaAsyncSocket.framework */; };
 		04B1B3D220299ABE00EEF6DE /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F800AF2029938200573EA6 /* CocoaLumberjack.framework */; };
 		04B1B3D320299ABE00EEF6DE /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F800AE2029938200573EA6 /* CocoaLumberjackSwift.framework */; };
@@ -101,6 +109,21 @@
 
 /* Begin PBXFileReference section */
 		043DF1332029C516007D70DF /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = SOURCE_ROOT; };
+		043DF13E202AB47A007D70DF /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		043DF140202AB658007D70DF /* PTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTManager.swift; sourceTree = "<group>"; };
+		043DF141202AB658007D70DF /* PeertalkSimple-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PeertalkSimple-Bridging-Header.h"; sourceTree = "<group>"; };
+		043DF142202AB658007D70DF /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		0445B5A3202AB26100426C61 /* PTUSBHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUSBHub.m; sourceTree = "<group>"; };
+		0445B5A4202AB26100426C61 /* PTProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTProtocol.m; sourceTree = "<group>"; };
+		0445B5A5202AB26100426C61 /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
+		0445B5A6202AB26100426C61 /* Peertalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peertalk.h; sourceTree = "<group>"; };
+		0445B5A7202AB26100426C61 /* PTChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTChannel.m; sourceTree = "<group>"; };
+		0445B5A8202AB26100426C61 /* PTPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPrivate.h; sourceTree = "<group>"; };
+		0445B5A9202AB26100426C61 /* PTProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTProtocol.h; sourceTree = "<group>"; };
+		0445B5AA202AB26100426C61 /* PTUSBHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUSBHub.h; sourceTree = "<group>"; };
+		0445B5AB202AB26100426C61 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		0445B5AC202AB26100426C61 /* PTChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTChannel.h; sourceTree = "<group>"; };
+		0445B5AD202AB26100426C61 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B1B3E12029BD8E00EEF6DE /* VpnManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VpnManager.swift; sourceTree = "<group>"; };
 		04F800AD2029938200573EA6 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = SOURCE_ROOT; };
 		04F800AE2029938200573EA6 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = SOURCE_ROOT; };
@@ -171,6 +194,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0445B5A1202AB1FA00426C61 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				0445B5A2202AB26100426C61 /* peertalk */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		0445B5A2202AB26100426C61 /* peertalk */ = {
+			isa = PBXGroup;
+			children = (
+				043DF142202AB658007D70DF /* Helper.swift */,
+				043DF141202AB658007D70DF /* PeertalkSimple-Bridging-Header.h */,
+				043DF140202AB658007D70DF /* PTManager.swift */,
+				0445B5A6202AB26100426C61 /* Peertalk.h */,
+				0445B5A9202AB26100426C61 /* PTProtocol.h */,
+				0445B5A4202AB26100426C61 /* PTProtocol.m */,
+				0445B5A8202AB26100426C61 /* PTPrivate.h */,
+				0445B5AA202AB26100426C61 /* PTUSBHub.h */,
+				0445B5A3202AB26100426C61 /* PTUSBHub.m */,
+				0445B5AC202AB26100426C61 /* PTChannel.h */,
+				0445B5A7202AB26100426C61 /* PTChannel.m */,
+				0445B5AD202AB26100426C61 /* Info.plist */,
+				0445B5AB202AB26100426C61 /* LICENSE.txt */,
+				0445B5A5202AB26100426C61 /* prefix.pch */,
+			);
+			path = peertalk;
+			sourceTree = "<group>";
+		};
 		04F800C62029940300573EA6 /* PocketTunnelProvider */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,7 +247,6 @@
 				04F8FE722029854900573EA6 /* XTool */,
 				04F800C62029940300573EA6 /* PocketTunnelProvider */,
 				04F8FE712029854900573EA6 /* Products */,
-				04F8FE9E2029878500573EA6 /* Vendor */,
 				04F8FE882029871000573EA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -212,10 +263,12 @@
 		04F8FE722029854900573EA6 /* XTool */ = {
 			isa = PBXGroup;
 			children = (
+				0445B5A1202AB1FA00426C61 /* Vendor */,
 				04F800D62029942500573EA6 /* XTool.entitlements */,
 				04F8FE732029854900573EA6 /* AppDelegate.swift */,
 				04F8FE752029854900573EA6 /* ViewController.swift */,
 				04B1B3E12029BD8E00EEF6DE /* VpnManager.swift */,
+				043DF13E202AB47A007D70DF /* ConnectViewController.swift */,
 				04F8FE772029854900573EA6 /* Main.storyboard */,
 				04F8FE7A2029854900573EA6 /* Assets.xcassets */,
 				04F8FE7C2029854900573EA6 /* LaunchScreen.storyboard */,
@@ -241,13 +294,6 @@
 				04F800B02029938200573EA6 /* Yaml.framework */,
 			);
 			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		04F8FE9E2029878500573EA6 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +365,9 @@
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
 							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.NetworkExtensions.iOS = {
 								enabled = 1;
 							};
@@ -360,8 +409,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0445B5B1202AB26100426C61 /* LICENSE.txt in Resources */,
 				04F8FE7E2029854900573EA6 /* LaunchScreen.storyboard in Resources */,
 				04F8FE7B2029854900573EA6 /* Assets.xcassets in Resources */,
+				0445B5B2202AB26100426C61 /* Info.plist in Resources */,
 				04F8FE792029854900573EA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,9 +432,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043DF13F202AB47A007D70DF /* ConnectViewController.swift in Sources */,
+				043DF143202AB658007D70DF /* PTManager.swift in Sources */,
 				04F8FE762029854900573EA6 /* ViewController.swift in Sources */,
+				0445B5B0202AB26100426C61 /* PTChannel.m in Sources */,
 				04F8FE742029854900573EA6 /* AppDelegate.swift in Sources */,
+				043DF144202AB658007D70DF /* Helper.swift in Sources */,
+				0445B5AE202AB26100426C61 /* PTUSBHub.m in Sources */,
 				04B1B3E22029BD8E00EEF6DE /* VpnManager.swift in Sources */,
+				0445B5AF202AB26100426C61 /* PTProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +642,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tttpeng.XTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/XTool/Vendor/peertalk/PeertalkSimple-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -609,6 +667,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tttpeng.XTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/XTool/Vendor/peertalk/PeertalkSimple-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

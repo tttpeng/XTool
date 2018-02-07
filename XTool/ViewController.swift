@@ -24,13 +24,12 @@ class ViewController: UIViewController {
         bt2.backgroundColor = UIColor.green;
         view.addSubview(bt2)
         bt2.addTarget(self, action: #selector(log), for: UIControlEvents.touchUpInside)
+        
     }
     
     
     @objc func log() {
-                let a =  UserDefaults(suiteName: "group.com.tttpeng.XTool")?.integer(forKey: "ok")
-        NSLog("MySwift%d", 1)
-            print(a)
+        navigationController?.pushViewController(ConnectViewController(), animated: true)
     }
     
     
